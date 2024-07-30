@@ -10,7 +10,7 @@
         ["{", "}"],
         ["[", "]"],
         ["(", ")"],
-        ["do", "end"]
+        ["faca", "fim"]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
@@ -19,7 +19,7 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"],
-        {"open": "do", "close": "end", "notIn": ["string", "comment"]},
+        {"open": "faca", "close": "fim", "notIn": ["string", "comment"]},
     ],
     // symbols that that can be used to surround a selection
     "surroundingPairs": [
@@ -28,13 +28,13 @@
         ["(", ")"],
         ["\"", "\""],
         ["'", "'"],
-        ["do", "end"]
+        ["faca", "fim"]
     ],
 
-    "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)(?<!do)(?<!end)(?<!doend)",
+    "wordPattern": "(-?\\d*\\.\\d\\w*)|([^\\`\\~\\!\\@\\#\\%\\^\\&\\*\\(\\)\\-\\=\\+\\[\\{\\]\\}\\\\\\|\\;\\:\\'\\\"\\,\\.\\<\\>\\/\\?\\s]+)(?<!faca)(?<!fim)(?<!doend)",
 
     "indentationRules": {
-        "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*|do)$",
-        "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*([\\}\\]]|end).*$"
+        "increaseIndentPattern": "^((?!\\/\\/).)*(\\{[^}\"'`]*|\\([^)\"'`]*|\\[[^\\]\"'`]*|faca)$",
+        "decreaseIndentPattern": "^((?!.*?\\/\\*).*\\*/)?\\s*([\\}\\]]|fim).*$"
     }
 }
